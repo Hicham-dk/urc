@@ -25,8 +25,14 @@ const Home = () => {
         dispatch(setLogout());
         navigate('/');
     };
+    window.Notification.requestPermission().then((permission) => {
+        if (permission === 'granted') {
+          // OK
+        }
+    });
 
     return (
+        
         <Box sx={{ display: 'flex', height: '100vh', bgcolor: '#f5f5f5' }}>
             <CssBaseline />
             <Drawer
