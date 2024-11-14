@@ -14,7 +14,6 @@ root.render(
      </Provider>
   </React.StrictMode>
 );
-<script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script>
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

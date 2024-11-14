@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=*, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  hey
+  <script>
+    import * as PusherPushNotifications from "@pusher/push-notifications-web";
+    const beamsClient = new PusherPushNotifications.Client({
+      instanceId: "d119df2c-f7bd-4788-9562-9bd8ed920f5c ",
+    });
+
+    beamsClient.start()
+    .then(() => beamsClient.addDeviceInterest('hello'))
+    .then(() => console.log('Successfully registered and subscribed!'))
+    .catch(console.error);
+
+  </script>
+</body>
+
+</html>
