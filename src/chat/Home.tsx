@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { userInfosSelector } from '../features/loginSlice';
 import GetUser from './allUser/getUser';
+import Rooms from '/home/dosi/urc/urc/src/room/Rooms';
 import { messageReceiverSelector } from '../features/messageSlice';
 import { CssBaseline, IconButton, Typography, Box, Drawer, List, Divider, ListItem, Avatar } from '@mui/material';
 import { Logout } from '@mui/icons-material';
@@ -52,7 +53,7 @@ const Home = () => {
                 {/* Titre de la barre latérale */}
                 <Box sx={{ p: 2, textAlign: 'center', bgcolor: '#303f9f' }}>
                     <Typography variant="h6" noWrap>
-                        Utilisateurs
+                        UBO Relay Chat
                     </Typography>
                 </Box>
 
@@ -65,7 +66,16 @@ const Home = () => {
                         </Box>
                     </ListItem>
                 </List>
+                
+                <List>
+                    <ListItem disablePadding>
+                        <Box sx={{ padding: 2 }}>
+                            <Rooms />
+                        </Box>
+                    </ListItem>
+                </List>
             </Drawer>
+            
 
             <Box
                 component="main"

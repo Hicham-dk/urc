@@ -56,3 +56,11 @@ export interface MessageInfos {
     senderId: number;
     receiverId: number;
 }
+export interface Room {
+    room_id: number;
+    name: string;
+    created_on?: string;
+}
+export interface Callback<T> {
+    (result: T): void;
+}

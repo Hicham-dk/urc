@@ -77,7 +77,7 @@ const MessageList: React.FC<{ receiverId: number,receiverName : string }> = ({ r
           {receiverName}
         </Typography>
       </Box>
-      <Box width={760} bgcolor="grey.100" p={3} sx={{ overflowY: 'auto', maxHeight: '70vh' }} ref={scrollRef}>
+      <Box width={800} bgcolor="grey.100" p={3} sx={{ overflowY: 'auto', maxHeight: '70vh' }} ref={scrollRef}>
         <List>
           {combinedMessages.length > 0 ? (
             combinedMessages.map((message, index) => (
