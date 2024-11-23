@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { userInfosSelector } from '../features/loginSlice';
 import GetUser from './allUser/getUser';
-import Rooms from '/home/dosi/urc/urc/src/room/Rooms';
+import Rooms from '../room/Rooms';
 import { messageReceiverSelector } from '../features/messageSlice';
 import { CssBaseline, IconButton, Typography, Box, Drawer, List, Divider, ListItem, Avatar } from '@mui/material';
 import { Logout } from '@mui/icons-material';

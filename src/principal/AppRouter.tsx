@@ -38,7 +38,6 @@ const AppRouter = () => {
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/home" element={<Home/>} />
         <Route path="/home/user/:receiverName/:receiverId" element={<Chats />} />
-
         <Route path="*" element={<NotFound />} />
 
 
