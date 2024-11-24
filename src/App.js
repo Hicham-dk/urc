@@ -1,5 +1,5 @@
 import './App.css';
-import AppRouter from './principal/AppRouter';
+import AppRouter from './principal/AppRouter.tsx';
 import { useEffect } from 'react';
 import { Client as PusherClient, TokenProvider } from '@pusher/push-notifications-web';
 
