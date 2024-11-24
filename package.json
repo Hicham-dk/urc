@@ -71,5 +71,9 @@
     "react-router-dom": "^6.19.0",
     "react-snap": "^1.23.0",
     "typescript": "^4.8.4"
-  }
+  },
+  "engines": {
+  "node": "20.x"
+}
+
 }
