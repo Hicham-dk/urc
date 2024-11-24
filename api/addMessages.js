@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { senderId, receiverId, senderName, messageContent } = req.body;
+    const { senderId, receiverId, senderName, messageContent ,receiverType} = req.body;
 
     const conversationKey = `conversations:${senderId}:${receiverId}`;
     const timestamp = new Date().toISOString();
@@ -19,6 +19,7 @@ export default async function handler(req, res) {
       senderName: senderName,
       messageContent: messageContent,
       timestamp: timestamp,
+      receiverType:receiverType,
     };
 
     // Add the new message to the conversation in Vercel KV

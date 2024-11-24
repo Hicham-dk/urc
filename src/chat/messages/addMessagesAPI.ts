@@ -1,7 +1,8 @@
 import { ErrorCallback,  Message} from "../../model/common";
 import {CustomError} from "../../model/CustomError";
 
-export function addMessage(message : Message, onResult: (success: boolean) => void, onError: ErrorCallback) {  
+export function addMessage(message : Message, onResult: (success: boolean) => void, onError: ErrorCallback) { 
+    console.log(message) 
     fetch("/api/addMessages",
     {
         method: "POST", // ou 'PUT'
